@@ -1,14 +1,29 @@
 #logo {
   display: none;
 }
+
 #header {
+  padding: 35px 0px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+}
+#header-container {
   max-width: 1200px;
+  padding: 0px 30px;
   height: 70px;
   display: flex;
-  padding: 70px 30px;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
+}
+#header.fixar {
+  z-index: 1;
+  background: #fef8f4;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0px 0px;
 }
 #nav a {
   color: black;
@@ -111,7 +126,7 @@
   }
 }
 @media (max-width: 600px) {
-  #header{
+  #header {
     background: var(--cor-bg-1);
   }
   #logo-grande {
@@ -120,7 +135,7 @@
   #logo {
     display: block;
   }
-  #menu{
+  #menu {
     width: 50%;
   }
 }

@@ -22,3 +22,10 @@ btnMenu.addEventListener("click", toggleMenu);
 if (window.SimpleAnime) {
   new SimpleAnime();
 }
+
+function fixarMenu(){
+  let header = document.querySelector('#header')
+  header.classList.toggle('fixar', window.scrollY > 0)
+}
+
+window.addEventListener('scroll', fixarMenu)

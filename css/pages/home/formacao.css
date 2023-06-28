@@ -15,6 +15,7 @@
   position: relative;
   cursor: pointer;
 }
+
 .formacao-conteudo summary::before{
   content: '';
   display: inline-block;
@@ -25,8 +26,13 @@
   border-radius: 100%;
   position: absolute;
   left: -60px;
-  top: -2px;
+  top: 3px;
   transition: .5s;
+}
+.formacao-conteudo summary:hover:before{
+  background-color: var(--cor-bg-5);
+  border: 8px solid var(--cor-bg-2);
+  
 }
 details[open] summary::before{
   border: 8px solid #F3C6E0;
