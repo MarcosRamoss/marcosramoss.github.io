@@ -41,15 +41,16 @@
 .projeto a {
   font-family: "Poppins";
   padding: 16px 32px;
-  background: var(--cor-1);
+  background: var(--cor-0);
   color: var(--cor-3);
   border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-right: 20px;
   transition: .3s;
 }
 .projeto a:hover {
-  background: #444;
+  background: var(--cor-1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 .apps, .sites {
   display: flex;
