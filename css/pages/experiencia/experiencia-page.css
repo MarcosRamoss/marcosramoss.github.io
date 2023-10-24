@@ -72,14 +72,14 @@
   }
   .calculadora,
   .melembre,
-  .proj-portifolio,
+  .proj-essencialweb,
   .proj-rbb,
   .proj-essencialweb {
     margin: 0 auto 160px auto;
   }
   .melembre div,
   .calculadora div,
-  .proj-portifolio div,
+  .proj-essencialweb div,
   .proj-rbb div {
     display: flex;
     justify-content: center;
