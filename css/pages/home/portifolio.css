@@ -3,6 +3,10 @@
   justify-content: center;
   align-items: center;
   margin: 30px;
+  animation: FadeInLeftScroll 1ms forwards;
+  animation-timeline: View();
+  animation-range: cover 0 cover 50%;
+
 }
 .portifolio {
   width: 1300px;

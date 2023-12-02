@@ -2,6 +2,9 @@
   max-width: 1300px;
   margin: 0 auto 120px auto;
   padding: 30px;
+  animation: FadeInRightScroll 1ms forwards;
+  animation-timeline: View();
+  animation-range: cover 0 cover 50%;
 }
 .formacao-titulo h1 {
   margin-bottom: 64px;
