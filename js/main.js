@@ -31,6 +31,14 @@ function toggleMenu(e) {
 }
 btnMenu.addEventListener("click", toggleMenu);
 btnMenu.addEventListener("touchstart", toggleMenu);
+// ----------------------------------------------------------------
+const btnFecharMenu = document.querySelector(".btn-fechar-menu");
+function fecharMenu() {
+  const nav = document.querySelector("#nav");
+  nav.classList.remove("active");
+  document.body.style.overflow = "auto";
+}
+btnFecharMenu.addEventListener("click", fecharMenu);
 
 // Animação
 if (window.SimpleAnime) {
@@ -41,9 +49,5 @@ function fixarMenu() {
   let header = document.querySelector("#header");
   header.classList.toggle("fixar", window.scrollY > 0);
 }
-function ajustarMenu() {
-  const menuMobile = document.querySelector("#menu");
-  menuMobile.classList.toggle("ajustar", window.scrollY > 0);
-}
 window.addEventListener("scroll", fixarMenu);
-window.addEventListener("scroll", ajustarMenu);
+

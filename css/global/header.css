@@ -54,6 +54,9 @@
 #btn-mobile {
   display: none;
 }
+.btn-fechar-menu{
+  display: none;
+}
 
 @media (max-width: 990px) {
   #nav a::after {
@@ -62,22 +65,36 @@
   #btn-mobile {
     display: block;
   }
+  #menu{
+    position: relative
+  }
+  .btn-fechar-menu{
+    display: block;
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: 30px;
+    right: 45px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding-top: 28px;
+  }
   #menu {
     display: block;
     position: absolute;
     width: 100%;
-    top: 120px;
+    top: 0px;
     left: 0;
-    background: var(--cor-bg-1);
+    background: #fef8f4;
     transition: 0.3s;
     z-index: 1000;
     height: 0px;
     visibility: hidden;
     overflow-y: hidden;
+    padding-top: 100px;
   }
-  #menu.ajustar{
-    top: 70px;
-  }
+
   #nav.active #menu {
     height: 100vh;
     visibility: visible;
