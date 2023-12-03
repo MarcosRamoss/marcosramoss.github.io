@@ -54,17 +54,8 @@
 #btn-mobile {
   display: none;
 }
-.icon-light{
-  display: none;
-}
 
 @media (max-width: 990px) {
-  .icon-light{
-    display: block;
-  }
-  .icon-dark{
-    display: none;
-  }
   #nav a::after {
     display: none;
   }
@@ -74,38 +65,41 @@
   #menu {
     display: block;
     position: absolute;
-    width: 30%;
+    width: 100%;
     top: 120px;
-    right: 30px;
-    border-radius: 15px;
-    background: var(--cor-1);
+    left: 0;
+    background: var(--cor-bg-1);
     transition: 0.3s;
     z-index: 1000;
     height: 0px;
     visibility: hidden;
     overflow-y: hidden;
   }
+  #menu.ajustar{
+    top: 70px;
+  }
   #nav.active #menu {
-    height: 300px;
+    height: 100vh;
     visibility: visible;
     overflow: auto;
   }
+  
   #menu a {
     display: block;
     padding: 1rem 0;
     margin: 0 1rem;
     margin: 0 30px;
-    color: var(--cor-3);
+    color: var(--cor-1);
     text-align: center;
+    padding-right: 20px;
   }
+
   #btn-mobile {
-    font-size: 1rem;
     display: flex;
     padding: 0.5rem 1rem;
-    border-radius: 5px;
     cursor: pointer;
     gap: 20px;
-    border-color: #c07;
+    border: none;
     background: var(--cor3);
   }
   #hamburger {
@@ -143,8 +137,5 @@
   }
   #logo {
     display: block;
-  }
-  #menu {
-    width: 50%;
   }
 }
