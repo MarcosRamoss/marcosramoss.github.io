@@ -49,4 +49,7 @@ function fixarMenu() {
   header.classList.toggle("fixar", window.scrollY > 0);
 }
 window.addEventListener("scroll", fixarMenu);
+// ----------------------------------------------------------------
+const anoAtual = document.querySelector('.ano')
+anoAtual.innerText = new Date().getFullYear()
 
